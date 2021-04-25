@@ -1,0 +1,23 @@
+{
+  "name": "ecr-k8s-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lona91/ecr-k8s-generator.git"
+  },
+  "author": "Luca Lonati <lona2303@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lona91/ecr-k8s-generator/issues"
+  },
+  "homepage": "https://github.com/lona91/ecr-k8s-generator#readme",
+  "dependencies": {
+    "@kubernetes/client-node": "^0.14.3",
+    "aws-sdk": "^2.892.0"
+  }
+}
