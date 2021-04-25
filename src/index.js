@@ -39,8 +39,10 @@ async function main() {
     secret.type = 'kubernetes.io/dockerconfigjson'
     secret.data = {
       '.dockerconfigjson': Buffer.from(JSON.stringify({
-        [process.env.REGISTRY]: {
-          auth: token
+        auths: {
+          [process.env.REGISTRY]: {
+            auth: token
+          }
         }
       })).toString('base64')
     }
